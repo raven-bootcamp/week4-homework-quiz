@@ -16,7 +16,7 @@ A list of high scores is kept that can be added to by the user, if their score i
 
 The rules of the quiz are vague (intentionally, I think).  I have designed the rules in the following way:
 
-1. The time limit is 60 seconds.
+1. The time limit is 75 seconds.
 2. There are 5 questions in total.
 3. A wrong answer subtracts 10 seconds from the remaining time.
 4. Should the user run out of time, or answer a question incorrectly which removes the remaining time, the game is over.
@@ -40,7 +40,7 @@ THEN I can save my initials and my score
 
 ## Mockup
 
-![image]()
+![image](/images/04-web-apis-homework-demo.gif)
 
 ## Solution demo
 
