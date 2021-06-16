@@ -1,8 +1,8 @@
 # Week 4 Homework: Quiz
 
-My solution, hosted using Github Pages:
+My solution, hosted using Github Pages: https://raven-bootcamp.github.io/week4-homework-quiz/
 
-The repository with my code:
+The repository with my code: https://github.com/raven-bootcamp/week4-homework-quiz
 
 ## The Task
 
@@ -44,4 +44,4 @@ THEN I can save my initials and my score
 
 ## Solution demo
 
-![image]()
+![image](/images/quiz-screenshot.png)
