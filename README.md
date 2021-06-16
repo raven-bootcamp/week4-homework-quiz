@@ -42,6 +42,6 @@ THEN I can save my initials and my score
 
 ![image](/images/04-web-apis-homework-demo.gif)
 
-## Solution demo
+## Solution screenshot
 
 ![image](/images/quiz-screenshot.png)
