@@ -17,7 +17,7 @@ A list of high scores is kept that can be added to by the user, if their score i
 The rules of the quiz are vague (intentionally, I think).  I have designed the rules in the following way:
 
 1. The time limit is 75 seconds.
-2. There are 5 questions in total.
+2. There are 6 questions in total.
 3. A wrong answer subtracts 10 seconds from the remaining time.
 4. Should the user run out of time, or answer a question incorrectly which removes the remaining time, the game is over.
 5. Should the user answer all the questions and they still have time remaining on the clock, the remaining time becomes their overall score.
