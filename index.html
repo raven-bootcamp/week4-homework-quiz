@@ -8,7 +8,7 @@
 <body>
     <div class="container">
         <div id="question-container">
-            <div id="intro">
+            <div id="intro">  <!--intro section with instructions-->
                 <h1>💻 Coding Quiz 💻</h1>
                 <p><strong> Answer all the questions within the time limit! </strong></p>
                 <p>If you select an incorrect answer, 10 seconds will be deducted from the remaining time.</p>
@@ -16,33 +16,37 @@
                 <p><strong>Good luck!!!</strong></p>
             </div>
             
-            <div id="timer" class="hide"><h2>Time remaining: <span id="time-remaining">75</span></h2></div>
+            <!--countdown clock-->
+            <div id="timer" class="hide"><h2>Time remaining: <span id="time-remaining"></span></h2></div>
            
+            <!--questions section with generated answer buttons-->
             <div id="question" class="hide"></div>
             <div id="answers-buttons" class="btn-grid hide"></div>  
         </div>
 
+        <!--controls for the start of the game-->
         <div class="controls">
-            <button id="startgame-btn" class="btn">Start Game</button>
-            <button id="highscore-btn" class="btn">High Scores</button>
+            <button id="startgame-btn" class="btn">🎮Start Game</button>
+            <button id="highscore-btn" class="btn">High Scores🏆</button>
         </div>
 
-         <div id="end-of-game" class="hide">
-            <h1>🎮 Game Over! 🎮</h1>
-            <h2>Final score: <span id="final-score"></span></h2>
-            <form id="submit-score">
-                <label for="user-name">Enter your name:</label>
-                <input type="text" id="user-name" placeholder="Enter your name here">
-                <br>
-                <div class="btn-grid">
-                    <button id="save-score-btn" type="submit" class="btn" disabled>💾 Save</button>
-                    <button id="home-btn" href="/" class="btn">🏠 Home</button>
-                </div>
-            </form>
+         <!--end of game section with final score and ability to save your name-->
+        <div id="end-of-game" class="hide">
+           <h1 id="verdict-title">🎮 Game Over! 🎮</h1>
+           <h2>Final score: <span id="final-score"></span></h2>
+           <div id="submit-score">
+               <label for="user-name">Save your score:</label>
+               <input type="text" id="user-name" placeholder="Enter your name here">
+           </div>
+           <div class="btn-grid">
+               <button id="save-score-btn" class="btn">💾Save</button>
+               <button id="home-btn" onClick="window.location.reload();" class="btn">🏠Home</button>
+           </div>
         </div>
 
     </div>
 
+    <!--separate container for high scores so you can show / hide it-->
     <div id="highscores-container" class="container hide">
         <div id="highscores-content">
             <h1>🏆 High Scores 🏆</h1>
@@ -55,9 +59,10 @@
                 
             </table>
         </div>
-         <div class="controls">
+        <!--button to clear the high scores-->
+        <div class="controls">
              <button id="clear-highscores-btn" class="btn">❌ Clear High Scores</button>
-         </div>
+        </div>
     </div>
 
     <script src="scripts/script.js"></script>
