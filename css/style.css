@@ -22,6 +22,58 @@ h1 {
     text-align:center;
 }
 
+/* small animation for the heading of the quiz */
+
+.neonText {
+    color: #fff;
+    text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 21px #fff,
+      0 0 42px #0fa,
+      0 0 82px #0fa,
+      0 0 92px #0fa,
+      0 0 102px #0fa,
+      0 0 151px #0fa;
+  }
+
+.pulsate {
+    animation: pulsate 0.5s infinite alternate;     
+}
+
+@keyframes pulsate {
+    
+    100% {
+  
+        text-shadow:
+        0 0 4px #fff,
+        0 0 11px #fff,
+        0 0 19px #fff,
+        0 0 40px #0fa,
+        0 0 80px #0fa,
+        0 0 90px #0fa,
+        0 0 100px #0fa,
+        0 0 150px #0fa;
+    
+    }
+    
+    0% {
+  
+      text-shadow:
+      0 0 2px #fff,
+      0 0 4px #fff,
+      0 0 6px #fff,
+      0 0 10px #0fa,
+      0 0 45px #0fa,
+      0 0 55px #0fa,
+      0 0 70px #0fa,
+      0 0 80px #0fa;
+  
+  }
+}
+
+/* section for entering your name to save your score */
+
 input {
     margin: 5px;
     text-align: center;
@@ -35,6 +87,7 @@ label {
     font-weight: bolder;
 }
 
+/* the main container that holds most of the content */
 .container {
     width: 800px;
     max-width: 80%;
@@ -45,14 +98,17 @@ label {
     margin: 15px;
 }
 
+/* section for intro text and instructions */
 #intro {
     padding: 0 50px;
 }
 
+/* section for the end of the game, and the relevant text */
 #end-of-game {
     text-align: center;
 }
 
+/* style for buttons using grid for alignment */
 .btn-grid {
     display: grid;
     grid-template-columns: inherit;
@@ -63,6 +119,7 @@ label {
     
 }
 
+/* style for general buttons in the game */
 .btn {
     background-color: #195821;
     border: 6px double whitesmoke;
@@ -75,6 +132,7 @@ label {
     font-weight: bold;
 }
 
+/* style for when you hover over any button */
 .btn:hover {
     cursor: pointer;
     box-shadow: 5px 10px 18px #787878;
@@ -82,12 +140,14 @@ label {
     transform: scale(1.05);
 }
 
+/* style for any button that is disabled */
 .btn[disabled]:hover {
-    cursor:disabled;
+    cursor: not-allowed;
     box-shadow: none;
     transform: none;
 }
 
+/* specific styles for certain buttons */
 #highscore-btn {
     background-color: #A3A347;
     font-size: 3rem;
@@ -100,15 +160,18 @@ label {
     padding: 10px 20px;
 }
 
+/* style for a button if the answer is correct */
 .btn.correct {
     background-color: rgb(139, 223, 56);
     color: black;
 }
 
+/* style for a button if the answer is wrong */
 .btn.wrong {
     background-color: red;
 }
 
+/* style for all questions */
 #question {
     font-size: 24px;
     padding: 5px;
@@ -116,6 +179,7 @@ label {
     text-align: center;
 }
 
+/* styles for the controls section, adding flex and alignment */
 .controls {
     display: flex;
     justify-content: center;
@@ -157,6 +221,7 @@ table {
   
   th {
     border-bottom: 1px solid whitesmoke;
+    font-weight: bolder;
   }
   
   td {
