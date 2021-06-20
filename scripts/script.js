@@ -187,7 +187,12 @@ function endOfGame() {
     finalScoreDisplay.textContent = finalScore;
 }
 
-// enter your name to save your score
+// Section to enter your name and save your score
+
+// Save button is disalbed by default, until you type something in the input box
+nameInput.addEventListener('keyup', () => {
+    saveScoreBtn.disabled = !nameInput.value;
+})
 
 function inputName(event) {
     event.preventDefault();
